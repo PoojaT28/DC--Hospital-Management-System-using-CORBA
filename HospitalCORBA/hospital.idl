@@ -1,0 +1,14 @@
+module HospitalApp {
+    struct Patient {
+        long id;
+        string name;
+        long age;
+        string disease;
+    };
+
+    interface Hospital {
+        void addPatient(in Patient p);
+        Patient getPatient(in long id);
+        string getAllPatients();
+    };
+};
